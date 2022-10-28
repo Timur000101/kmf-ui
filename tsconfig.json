@@ -1,0 +1,37 @@
+{
+	"files": [],
+	"references": [
+		{
+			"path": "./tsconfig.config.json"
+		},
+		{
+			"path": "./tsconfig.app.json"
+		},
+		{
+			"path": "./tsconfig.vitest.json"
+		}
+	],
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"strict": false,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"lib": ["esnext", "dom", "WebWorker"],
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": false,
+		"outDir": "dist",
+		"declaration": true,
+		"types": ["vitest/globals"],
+		"paths": {
+			"@/*": ["./src/*", "./dist/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js", "tests/**/*.ts", "tests/**/*.tsx"],
+	"exclude": ["dist", "node_modules", "test", "test.ts", "**/*.spec.ts", "**/*.worker.ts"]
+}
