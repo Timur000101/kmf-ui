@@ -1,5 +1,3 @@
-import Button from './Button';
-import TextField from './TextField';
-import PhoneField from './PhoneField';
-
-export { Button, TextField, PhoneField };
+export { default as Button } from './Button';
+export { default as TextField } from './TextField';
+export { default as PhoneField } from './PhoneField';
