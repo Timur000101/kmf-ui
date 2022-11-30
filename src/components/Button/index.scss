@@ -1,0 +1,63 @@
+@import "../variables";
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 288px;
+	outline: none;
+	border: none;
+}
+
+.btn-lg {
+	height: 56px;
+	font-size: 18px;
+}
+
+.btn-md {
+	height: 49px;
+	font-size: 16px;
+}
+
+.btn-sm {
+	height: 47px;
+	font-size: 15px;
+}
+
+.btn-primary {
+	background-color: $primary;
+	color: $white;
+	&:hover {
+		background-color: #D92D22;
+	}
+	&:focus {
+		border: 1px solid #71100A;
+		background-color: #D92D22;
+	}
+	&:active {
+		background-color: #D92D22;
+	}
+}
+
+.btn-secondary {
+	background-color: $bg_fill_default;
+	color: $dark;
+	&:hover {
+		background-color: #EFEFEF;
+	}
+	&:focus {
+		background-color: #EFEFEF;
+	}
+	&:active {
+		background-color: #EFEFEF;
+	}
+}
+
+.btn-disabled {
+	background-color: $inactive_color;
+	color: $disabled_text;
+}
+
+.btn-border-radius {
+	border-radius: 7px;
+}

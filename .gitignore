@@ -12,6 +12,9 @@ node_modules
 coverage
 *.local
 
+/dist
+/.storybook
+
 /cypress/videos/
 /cypress/screenshots/
 
